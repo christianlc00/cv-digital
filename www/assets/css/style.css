@@ -16,7 +16,16 @@
     justify-content: center; }
     .clc_cv .clc_cv-background .clc_cv-title {
       color: white; }
+    .clc_cv .clc_cv-background .clc_cv-subtitle {
+      color: white; }
     .clc_cv .clc_cv-background .clc_cv-img {
       width: 25vw; }
+  @media only screen and (max-width: 600px) {
+    .clc_cv .clc_cv-title {
+      font-size: 1.5em; }
+    .clc_cv .clc_cv-subtitle {
+      font-size: 1em; }
+    .clc_cv .clc_cv-img {
+      width: 75vw !important; } }
 
 /*# sourceMappingURL=style.css.map */

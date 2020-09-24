@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .clc_cv {
     font-family: 'Roboto', sans-serif;
@@ -21,8 +21,26 @@
             color: white;
         }
 
+        .clc_cv-subtitle {
+            color: white;
+        }
+
         .clc_cv-img {
             width: 25vw;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .clc_cv-title {
+            font-size: 1.5em;
+        }
+
+        .clc_cv-subtitle {
+            font-size: 1em;
+        }
+
+        .clc_cv-img {
+            width: 75vw !important;
         }
     }
 }
