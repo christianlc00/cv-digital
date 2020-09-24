@@ -1,0 +1,22 @@
+{
+  "name": "cv-digital",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "npm run build && http-server ./www",
+    "start:secure": "npm run build && http-server ./www -S -C cert.pem",
+    "build": "sass ./www/assets/scss/style.scss ./www/assets/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianlc00/cv-digital.git"
+  },
+  "author": "christianlc00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christianlc00/cv-digital/issues"
+  },
+  "homepage": "https://github.com/christianlc00/cv-digital#readme"
+}
