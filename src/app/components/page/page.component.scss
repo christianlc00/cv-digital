@@ -1,0 +1,43 @@
+.page {
+  background-color: white;
+  height: 297mm;
+  margin: 5rem 0;
+  width: 210mm;
+
+  .sidebar {
+    align-items: center;
+    // background-color: #232d4bff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    width: 96.384mm;
+
+    .face-photo {
+      aspect-ratio: 1/1;
+      margin-top: 17.5mm;
+      width: 50.44mm;
+    }
+
+    .sidebar-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .bottom-shape {
+      bottom: 0;
+      // fill: #00aa9bff;
+      left: 0;
+      position: absolute;
+
+      .qr-code {
+        position: absolute;
+        width: 150px;
+        bottom: 8.5mm;
+        left: 8.5mm;
+      }
+    }
+  }
+}
