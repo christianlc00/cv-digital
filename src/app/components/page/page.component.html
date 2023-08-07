@@ -1,17 +1,21 @@
 <div class="page">
-  <div class="sidebar" [style.backgroundColor]="'#'+pColor">
+  <div class="sidebar" [style.backgroundColor]="'#' + pColor">
     <img src="assets/img/face-1.jpg" alt="" class="face-photo" />
     <div class="sidebar-text">
-      <span>Christian</span>
-      <span>López Carretero</span>
+      <span class="name">Christian</span>
+      <span class="last-name">López Carretero</span>
     </div>
     <div class="sidebar-text">
-      <span>634 82 75 58</span>
-      <span>christian@lopezcarretero.es</span>
+      <span class="phone"><a href="tel:+34634827558">634 82 75 58</a></span>
+      <span class="email"
+        ><a href="mailto:christian@lopezcarretero.es"
+          >christian@lopezcarretero.es</a
+        ></span
+      >
     </div>
     <div class="sidebar-text">
-      <span>Christian</span>
-      <span>López Carretero</span>
+      <span class="address">San Vicente del Raspeig</span>
+      <span class="address">Alicante, España</span>
     </div>
     <div class="bottom-shape">
       <svg
@@ -21,7 +25,7 @@
         viewBox="0 0 96.384 115.05"
         xmlns="http://www.w3.org/2000/svg"
         class="bottom-shape"
-        [style.fill]="'#'+sColor"
+        [style.fill]="'#' + sColor"
       >
         <path
           d="m0.005847 0-0.005847 115.05h96.384v-28.879z"
@@ -29,8 +33,54 @@
         />
       </svg>
       <a href="https://christianlc.dev/" target="_blank">
-        <img [src]="qrImage" class="qr-code"/>
+        <img [src]="qrImage" class="qr-code" />
       </a>
     </div>
+  </div>
+  <div class="main-content">
+    <h2 [style.color]="'#' + sColor">Experiencia</h2>
+    <div class="experience-item">
+      <h3>Inetum</h3>
+      <p>Web Developer (2022 - 2023)</p>
+      <p></p>
+      <p></p>
+      <p>Technologies used: Angular, NodeJS with ExpressJS.</p>
+    </div>
+    <div class="experience-item">
+      <h3>NTTDATA Europe & LATAM</h3>
+      <p>Web Developer (2020 - 2022)</p>
+      <p>
+        Creation of an application for calculating protections in Red Eléctrica
+        Española equipment. With roles in evolutionary development, design,
+        analysis and refinement.
+      </p>
+      <p>
+        Creation of the customer management website for SMEs and Large Companies
+        in Orange Spain. With roles in maintenance, evolutionary development,
+        documentation and deployment to production.
+      </p>
+      <p>Technologies used: Angular, AngularJS and Java(Spring).</p>
+    </div>
+    <div class="experience-item">
+      <h3>Conwork</h3>
+      <p>Fullstack Developer (2018 - 2019)</p>
+      <p>
+        Creation of public corporate websites with their respective internal
+        management systems for different clients. With roles in functional
+        design, architecture design, maintenance, evolutionary development and
+        deployment of projects to production.
+      </p>
+      <p>Technologies used: PHP, MySQL and Bootstrap.</p>
+    </div>
+    <h2 [style.color]="'#' + sColor">Educación</h2>
+    <div class="studies-item">
+      <h3>IES San Vicente</h3>
+      <p>Web Application Development (2018 - 2020)</p>
+    </div>
+    <div class="studies-item">
+      <h3>IES San Vicente</h3>
+      <p>Microcomputer Systems and Networks (2016 - 2018)</p>
+    </div>
+    <h2 [style.color]="'#' + sColor">Idiomas</h2>
   </div>
 </div>

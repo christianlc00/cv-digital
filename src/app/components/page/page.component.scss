@@ -3,6 +3,7 @@
   height: 297mm;
   margin: 5rem 0;
   width: 210mm;
+  display: flex;
 
   .sidebar {
     align-items: center;
@@ -24,6 +25,34 @@
       flex-direction: column;
       align-items: center;
       color: white;
+      font-weight: bold;
+      margin: 10mm 0;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .name {
+        font-size: 13mm;
+      }
+
+      .last-name {
+        font-size: 7mm;
+      }
+
+      .phone {
+        font-size: 10mm;
+        letter-spacing: 2mm;
+      }
+
+      .email {
+        font-size: 6.5mm;
+      }
+
+      .address {
+        font-size: 7.5mm;
+      }
     }
 
     .bottom-shape {
@@ -38,6 +67,28 @@
         bottom: 8.5mm;
         left: 8.5mm;
       }
+    }
+  }
+
+  .main-content {
+    padding: 10mm 5mm;
+    max-width: 103.616mm;
+    width: 103.616mm;
+
+    h2 {
+      font-size: 20pt;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 13pt;
+    }
+
+    p {
+      font-size: 10pt;
     }
   }
 }

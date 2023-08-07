@@ -26,5 +26,11 @@ export class PageComponent implements OnInit {
       .catch((err) => {
         console.error(err);
       });
+
+    this._activatedRoute.paramMap.subscribe((params) => {
+      console.log({ id: params.get('id') });
+    });
+
+    console.log({ id2: this._activatedRoute.snapshot.params['id'] });
   }
 }
