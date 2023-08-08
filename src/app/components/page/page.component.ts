@@ -9,28 +9,36 @@ import * as QRCode from 'qrcode';
 })
 export class PageComponent implements OnInit {
   public qrImage = '';
-  public pColor = '232d4bff';
-  public sColor = '00aa9bff';
-  public language = '';
+  public pColor = '232d4b';
+  public sColor = '00aa9b';
+  public language = 'es';
+  public cvURL = '';
 
   constructor(private _activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
-    QRCode.toDataURL('https://christianlc.dev/', {
-      margin: 1,
-      type: 'image/png',
-    })
-      .then((url) => {
-        this.qrImage = url;
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-
     this._activatedRoute.paramMap.subscribe((params) => {
       console.log({ id: params.get('id') });
-    });
+      if (params.get('id')) {
+      } else {
+        this.pColor = params.get('pColor') || this.pColor;
+        this.sColor = params.get('sColor') || this.sColor;
+        this.language = params.get('language') || this.language;
+      }
 
-    console.log({ id2: this._activatedRoute.snapshot.params['id'] });
+      // this.cvURL = `https://cv.christianlc.dev/${this.pColor}/${this.sColor}/${this.language}`;
+      this.cvURL = `https://christianlc.dev/?pc=${this.sColor}&sc=${this.pColor}`;
+
+      QRCode.toDataURL(this.cvURL, {
+        margin: 1,
+        type: 'image/png',
+      })
+        .then((url) => {
+          this.qrImage = url;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    });
   }
 }

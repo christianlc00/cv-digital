@@ -6,6 +6,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: ':id', component: PageComponent, pathMatch: 'full' },
+  { path: ':pColor/:sColor/:language', component: PageComponent, pathMatch: 'full' },
   { path: '', component: NotFoundComponent },
   { path: '**', component: NotFoundComponent },
 ];
